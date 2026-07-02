@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türkiye Monopoly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="board" id="board">
+            </div>
+
+        <div class="panel">
+            <h1>TR Monopoly</h1>
+            <div id="turn-indicator">Sıra: Oyuncu 1</div>
+            
+            <div class="dice-section">
+                <button id="btn-roll" onclick="rollDice()">Zar At</button>
+                <div id="dice-result">Zar: -</div>
+            </div>
+
+            <div class="actions" id="action-panel">
+                <p id="action-message">Oyun Başlıyor!</p>
+                <button id="btn-buy" style="display:none;" onclick="buyProperty()">Satın Al</button>
+                <button id="btn-build" style="display:none;" onclick="buildHouse()">Ev/Otel Dik</button>
+                <button id="btn-end" style="display:none;" onclick="endTurn()">Turu Bitir</button>
+            </div>
+
+            <div class="players">
+                <div class="player-card" id="p0-card">
+                    <h3>Oyuncu 1 <span class="token p1"></span></h3>
+                    <p>Bakiye: <span id="p0-money">1500</span>₺</p>
+                </div>
+                <div class="player-card" id="p1-card">
+                    <h3>Oyuncu 2 <span class="token p2"></span></h3>
+                    <p>Bakiye: <span id="p1-money">1500</span>₺</p>
+                </div>
+                <div class="player-card" id="p2-card">
+                    <h3>Oyuncu 3 <span class="token p3"></span></h3>
+                    <p>Bakiye: <span id="p2-money">1500</span>₺</p>
+                </div>
+                <div class="player-card" id="p3-card">
+                    <h3>Oyuncu 4 <span class="token p4"></span></h3>
+                    <p>Bakiye: <span id="p3-money">1500</span>₺</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
